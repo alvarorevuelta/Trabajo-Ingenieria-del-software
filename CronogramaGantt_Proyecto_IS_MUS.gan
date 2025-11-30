@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Mus - Fases corregido" company="" webLink="" view-date="2026-01-05" view-index="0" gantt-divider-location="299" resource-divider-location="300" version="3.3.3316" locale="es_ES">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="170" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="64" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="64" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#f4f4f4 #99ff99 #ff9933 #ff6666]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" uid="b6e4f9add3b14321b47b03bd977bd362" name="Fase 1: Análisis" meeting="false" start="2025-11-24" duration="21" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <task id="8" uid="5d3d1285bb0246a2814e87d7030e5be1" name="Recoger requisitos" meeting="false" start="2025-11-24" duration="7" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="a722246ccc7f44d7956ac46506644ce9" name="Definir el sistema y sus funcionalidades" color="#f4f4f4" meeting="false" start="2025-12-01" duration="7" complete="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" uid="a2a529875fbe463d8b8175ae35900990" name="Casos de uso básicos" meeting="false" start="2025-12-08" duration="7" complete="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="2" uid="44f81709a2564485853753de1b09d5e5" name="Fase 2: Diseño" meeting="false" start="2025-12-15" duration="14" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <task id="9" uid="f46591033e4045e290835ec06bbbb998" name="Arquitectura general" meeting="false" start="2025-12-15" duration="7" complete="0" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="bf1e16e16da74375a9eaf74485c09b16" name="seleccion de tecnología" meeting="false" start="2025-12-16" duration="1" complete="0" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="dbbd4fdc8ed241cfa0426a524aedc7d5" name="Diagramas de caso de uso UML" meeting="false" start="2025-12-22" duration="5" complete="0" expand="true"/>
+            <task id="10" uid="ebc309ac4b74499e821e7c5058bbe9b1" name="Prototipos de interfaz" meeting="false" start="2025-12-22" duration="7" complete="0" expand="true"/>
+        </task>
+        <task id="3" uid="826fdecb73b4417a9fbc209906382d0e" name="Fase 3: Desarrollo" meeting="false" start="2025-12-29" duration="48" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <task id="14" uid="6620bb3cd8164b56bd51fdf0032d8032" name="Modulo 1: introduccion de manos" meeting="false" start="2025-12-29" duration="10" complete="0" priority="2" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="89b9a42d50f24319a0b57a2f26200f31" name="Modulo 2: Motor de recomendacion (por MonteCarlo)" meeting="false" start="2025-12-29" duration="23" complete="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" uid="036da0d3e2334026bf4994dcd66756a5" name="Modulo 3: Modo de entrenamiento" meeting="false" start="2026-01-21" duration="10" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" uid="d0353b7695dc437fbdcc316c5e9a1e54" name="Modulo 4: Panel de estadísticas" meeting="false" start="2026-01-08" duration="10" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" uid="faf44a357a854222b3e6be5eaba481cb" name="Unión de módulos" meeting="false" start="2026-01-31" duration="15" complete="0" expand="true"/>
+        </task>
+        <task id="4" uid="4a89bb59d3924729af37b2b15d91cbc8" name="Fase 4: Pruebas y Optimización" color="#99ff99" meeting="false" start="2026-02-15" duration="28" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="d29bca58ebd54527bd73d28ba49898dd" name="Fase 5: Documentación y Empaquetado" color="#ff9933" meeting="false" start="2026-03-15" duration="14" complete="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="2879853d7ca64e03914fcfccafd6d8a6" name="Fase 6: Presentación y Cierre" color="#ff6666" meeting="false" start="2026-03-29" duration="7" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="4" name="Saúl" function="Default:0" contacts="" phone=""/>
+        <resource id="9" name="Nicolás" function="Default:0" contacts="" phone=""/>
+        <resource id="10" name="Marcos" function="Default:0" contacts="" phone=""/>
+        <resource id="11" name="Álvaro" function="Default:0" contacts="" phone=""/>
+        <resource id="12" name="Álvaro López" function="Default:0" contacts="" phone=""/>
+        <resource id="13" name="Alonso" function="Default:0" contacts="" phone=""/>
+        <resource id="14" name="Sheyla" function="Default:0" contacts="" phone=""/>
+        <resource id="15" name="Carlos" function="Default:0" contacts="" phone=""/>
+        <resource id="16" name="Alejandro" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="10" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="10" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="11" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="12" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="12" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="13" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="13" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="14" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="15" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="16" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="16" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="4"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="9"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="10"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="11"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="12"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="13"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="14"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="15"/>
+        <vacation start="2025-12-23" end="2026-01-08" resourceid="16"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
